@@ -123,6 +123,55 @@
     {
         margin-top: 4%;
     }
+
+
+
+
+    .language-selector {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+
+    .language-selected {
+        padding: 8px 12px;
+        background: #242930;
+        color: white;
+        border-radius: 6px;
+        user-select: none;
+
+    }
+
+    .language-dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 5px;
+        background: #1a1e23;
+        border-radius: 6px;
+        list-style: none;
+        padding: 0;
+        display: none; /* <--- по умолчанию скрыто */
+        min-width: 100%;
+        z-index: 10;
+    }
+
+    .language-dropdown li {
+        padding: 8px 12px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .language-dropdown li:hover {
+        background: #333;
+    }
+
+    /* показываем список только когда есть класс open */
+    .language-selector.open .language-dropdown {
+        display: block;
+    }
+
 }
 
 

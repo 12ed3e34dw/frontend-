@@ -5,10 +5,20 @@ import Logo from "@/assets/Logo.svg";
 import '@/Styles/Navigate_style/Menu.css';
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
+import {useState} from "react";
 
 export default function Menu() {
     const router = useRouter();
     const { t } = useTranslation();
+    const [selected, setSelected] = useState("ENG");
+    const [open, setOpen] = useState(false);
+
+    const languages = ["ENG", "UA", "DEU"];
+
+    const handleSelect = (lang: string) => {
+        setSelected(lang);
+        setOpen(false);
+    };
     const goRegister = () => {
         router.push("/Register");
     };
@@ -27,13 +37,20 @@ export default function Menu() {
                 <Image src={Burger_Menu} alt="Menu" className="Img" />
             </div>
 
-            {/* Контейнеры для ПК */}
-            <div className="desktop_menu">
-                <div className="container_Contacts">{t("Contacts")}</div>
-                <div className="container_Practice">{t("Practice")}</div>
-                <div className="container_About">{t("About")}</div>
-                <div className="container_FAQ">{t("FAQ")}</div>
+            <div
+                className={`language-selector ${open ? "open" : ""}`} onClick={() => setOpen(!open)}>
+                <div className="language-selected">{selected}</div>
+                <ul className="language-dropdown">
+                    {languages
+                        .filter((lang) => lang !== selected)
+                        .map((lang) => (
+                            <li key={lang} onClick={() => handleSelect(lang)}>
+                                {lang}
+                            </li>
+                        ))}
+                </ul>
             </div>
+
         </div>
     );
 }

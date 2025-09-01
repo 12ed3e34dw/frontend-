@@ -1,16 +1,16 @@
 .main {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    scrollbar-color: #6FA9EB #121419 ;
+    min-height: 100vh; /* Изменено на min-height */
+    overflow: visible; /* Изменено на visible */
+    height: auto; /* Добавлено */
 }
+
 
 /* 📱 Телефоны */
 @media (max-width: 600px) {
     .background {
-        position: absolute;
+        position:  fixed;
         inset: 0;
           background-image: url("@/assets/font.png");
         background-size: contain;   /* картинка помещается полностью */
@@ -69,10 +69,49 @@
 
 
     .background {
-        position: absolute;
+        position: fixed;
         inset: 0;
-        background-color:#121419;
+        background-color: #121419;
         z-index: -1;
+    }
+
+    .content-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .block_teachnologies,
+    .block_program,
+    .block_perfect {
+        width: 30%;
+        height: 30%;
+        border-radius: 10px;
+        background-color: #242930;
+    }
+
+    .block_teachnologies {
+        margin: 3%;
+    }
+
+    .block_program {
+        margin-left: 34%;
+        margin-top: -8.8%;
+    }
+
+    .block_perfect {
+        margin-left: 66%;
+        margin-top: -5.7%;
+    }
+
+
+    .why-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .txt_English {
@@ -84,7 +123,7 @@
         font-size: 120px;
     }
 
-    .txt_For{
+    .txt_For {
         color: #CAE9FB;
         font-family: 'Red Hat Mono', monospace;
 
@@ -92,8 +131,7 @@
         margin-left: 55%;
     }
 
-    .txt_Everyone
-    {
+    .txt_Everyone {
         margin-top: -3%;
         margin-left: 32%;
     }
@@ -104,7 +142,7 @@
     }
 
     .button {
-        width:14%;
+        width: 14%;
         height: 48px;
         border-radius: 10px;
         background-color: #F93D7A;
@@ -114,16 +152,16 @@
 
 
     .txt_button {
-        font-family: 'Montserrat Alternates',monospace;
+        font-family: 'Montserrat Alternates', monospace;
         font-size: 20px;
     }
 
-    .txt_credit_card
-    {
+    .txt_credit_card {
         margin-left: 42.4%;
         margin-top: 1.1%;
         font-size: 14px;
-        font-family: 'Montserrat',monospace;
+        font-family: 'Montserrat', monospace;
+        color: #ADCADA;
     }
 
     .txt_Everyone,
@@ -135,34 +173,278 @@
     }
 
 
-    .txt_WHY
-    {
-        color:white;
+    .txt_WHY {
+        color: #F93D7A;
         font-weight: 700;
         font-family: 'Red Hat Mono', monospace;
         font-size: 120px;
         margin-top: 10%;
-    }
-
-    .txt_CHOOSE
-    {
-        color: white;
-        font-weight: 700;
-        font-family: 'Red Hat Mono', monospace;
-        font-size: 120px;
         margin-left: 20%;
-        margin-top: -9.5%;
     }
 
-    .txt_US
-    {
-        color: white;
+    .txt_CHOOSE {
+        color: #CAE9FB;
         font-weight: 700;
         font-family: 'Red Hat Mono', monospace;
         font-size: 120px;
-        margin-left: 50%;
+        margin-left: 36%;
         margin-top: -9.5%;
     }
+
+    .txt_US {
+        color: #CAE9FB;
+        font-weight: 700;
+        font-family: 'Red Hat Mono', monospace;
+        font-size: 120px;
+        margin-left: 62%;
+        margin-top: -9.5%;
+    }
+
+    .txt {
+        margin-left: 42.2%;
+        font-size: 20px;
+    }
+
+    .txt_1 {
+        margin-left: 12%;
+        margin-top: -32%;
+    }
+
+
+    .txt_1,
+    .txt_4,
+    .txt_6,
+    .txt_8,
+    .txt_11 {
+        font-family: 'Montserrat Alternates';
+        color: #73B5FF;
+        font-size: 32px;
+        font-style: Bold;
+        font-weight: 700;
+    }
+
+    .txt_2 {
+        margin-left: 12%;
+    }
+
+    .txt_3 {
+        margin-left: 12%;
+    }
+
+    .txt_4 {
+        margin-left: 26%;
+        margin-top: -5%;
+    }
+
+    .txt_5 {
+        margin-left: 26%;
+    }
+
+    .txt_6 {
+        margin-left: 40%;
+        margin-top: -3.7%;
+    }
+
+    .txt_7 {
+        margin-left: 40%;
+    }
+
+    .txt_8 {
+        margin-left: 56%;
+        margin-top: -3.9%;
+    }
+
+    .txt_9 {
+        margin-left: 56%;
+    }
+
+    .txt_10 {
+        margin-left: 56%;
+    }
+
+    .txt_11 {
+        margin-left: 70%;
+        margin-top: -5.5%;
+    }
+
+    .txt_12 {
+        margin-left: 70%;
+    }
+
+    .txt_13 {
+        margin-left: 70%;
+    }
+
+    .txt_14 {
+
+    }
+
+    .txt_15 {
+
+    }
+
+    .txt_16 {
+
+    }
+
+    .txt_bu {
+
+    }
+
+    .txt_17 {
+
+    }
+
+    .txt_18 {
+
+    }
+
+    .txt_19 {
+
+    }
+
+    .txt_20 {
+
+    }
+
+    .txt_21 {
+
+    }
+
+    .txt_22 {
+
+    }
+
+    .txt_23 {
+
+    }
+
+    .txt_24 {
+
+    }
+
+    .txt_25 {
+
+    }
+
+    .txt_26 {
+
+    }
+
+    .txt_27 {
+
+    }
+
+    .txt_28 {
+
+    }
+
+    .txt_29 {
+
+    }
+
+    .txt_30 {
+
+    }
+
+    .txt_31 {
+
+    }
+
+    .txt_32 {
+
+    }
+
+    .txt_33 {
+
+    }
+
+    .txt_34 {
+
+    }
+
+    .txt_35 {
+
+    }
+
+    .txt_36 {
+
+    }
+
+    .container_2 {
+
+    }
+
+    .container_3 {
+
+    }
+
+    .txt_14,
+    .txt_19,
+    .txt_24 {
+        color: #73B5FF;
+        font-family: 'Montserrat Alternates';
+        font-size: 24px;
+        font-weight: 700;
+        font-style: Bold;
+        margin-left: 2%;
+
+    }
+
+    .txt_20,
+    .txt_25,
+    .txt_15 {
+        color: #CAE9FB;
+        font-weight: 700;
+        font-family: 'Montserrat Alternates';
+        font-size: 24px;
+        margin-left: 8%;
+        margin-top: -6%;
+        font-style: Bold;
+        letter-spacing: 0%;
+        line-height: 140%;
+    }
+
+
+
+
+    .hr_1
+    {
+        width: 2px; /* тонкая вертикальная линия */
+        height: 100px; /* можно поставить 100% если у родителя фиксированная высота */
+        background-color: #242930;
+        margin: 10px; /* отступы между линиями */
+        margin-left: 22%;
+        margin-top: -5%;
+
+    }
+    .hr_2 {
+        width: 2px; /* тонкая вертикальная линия */
+        height: 100px; /* можно поставить 100% если у родителя фиксированная высота */
+        background-color: #242930;
+        margin: 10px; /* отступы между линиями */
+        margin-left: 38%;
+        margin-top: -5.5%;
+      }
+    .hr_3 {
+        width: 2px; /* тонкая вертикальная линия */
+        height: 100px; /* можно поставить 100% если у родителя фиксированная высота */
+        background-color: #242930;
+        margin: 10px; /* отступы между линиями */
+        margin-left: 54%;
+        margin-top: -6.3%;
+     }
+    .hr_4 {
+        width: 2px; /* тонкая вертикальная линия */
+        height: 100px; /* можно поставить 100% если у родителя фиксированная высота */
+        background-color: #242930;
+        margin: 10px; /* отступы между линиями */
+        margin-left: 68%;
+        margin-top: -6%;
+
+     }
+
+
 
 }
 
