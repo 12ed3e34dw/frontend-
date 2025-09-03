@@ -115,7 +115,7 @@
     }
 
     .txt_English {
-        margin-left: 26%;
+        margin-left: 29%;
         margin-top: 10%;
         color: #CAE9FB;
         font-weight: 700;
@@ -128,7 +128,7 @@
         font-family: 'Red Hat Mono', monospace;
 
         margin-top: -9.5%;
-        margin-left: 55%;
+        margin-left: 56%;
     }
 
     .txt_Everyone {
@@ -340,35 +340,78 @@
     }
 
     .txt_29 {
-
+        margin-top: -38%;
+        margin-left: 30%;
+        color: #F93D7A;
     }
 
     .txt_30 {
-
+        color:#CAE9FB;
+        margin-top: -5.2%;
+        margin-left: 53.4%;
     }
-
     .txt_31 {
-
+margin-left: 32%;
+        color:#CAE9FB;
     }
 
-    .txt_32 {
 
+    .txt_31,
+    .txt_30,
+    .txt_29{
+       font-family:'Red Hat Mono', monospace ;
+        font-weight: 700;
+        font-style:Bold;
+        font-size: 100px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .txt_32,
+    .txt_33{
+        font-family: 'Montserrat Alternates', monospace;
+        font-weight: 500;
+        font-size: 20px;
+        font-style:Medium;
+        line-height: 140%;
+        letter-spacing: 0%;
+        margin-left: 28%;
     }
 
     .txt_33 {
-
+     margin-left: 47.5%;
+    }
+    .txt_34 {
+        margin-top: 5%;
+        margin-left: 32%;
+        color:#CAE9FB;
     }
 
-    .txt_34 {
-
+    .txt_34,
+    .txt_35{
+     font-family: 'Red Hat Mono', monospace;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        font-style: Bold;
     }
 
     .txt_35 {
-
+        margin-top: -7.5%;
+        margin-left: 43%;
+        color: #F93D7A;
     }
 
     .txt_36 {
-
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        font-style:Medium;
+        line-height: 140%;
+        letter-spacing: 0%;
+        color:#CAE9FB;
+        margin-left: 43.3%;
     }
 
     .container_2 {
@@ -379,6 +422,99 @@
 
     }
 
+    .course_sections
+    {
+
+    }
+    .container_4
+    {
+
+    }
+    .txt_37
+    {
+
+    }
+    .txt_38
+    {
+
+    }
+    .txt_39
+    {
+
+    }
+    .txt_40
+    {
+
+    }
+    .txt_41
+    {
+
+    }
+    .txt_42
+    {
+
+    }
+    .container_5
+    {
+
+    }
+    .txt_43{
+
+    }
+    .txt_44
+    {
+
+    }
+    .txt_45
+    {
+
+    }
+    .txt_46
+    {
+
+    }
+    .txt_47
+    {
+
+    }
+    .txt_48
+    {
+
+    }
+    .txt_49
+    {
+
+    }
+    .container_6
+    {
+
+    }
+.txt_50
+{
+
+}
+
+.txt_51
+{
+
+}
+
+.txt_52
+{
+
+}
+.txt_53
+{
+
+}
+.txt_54
+{
+
+}
+.txt_55
+{
+
+}
     .txt_14,
     .txt_19,
     .txt_24 {
@@ -404,10 +540,6 @@
         letter-spacing: 0%;
         line-height: 140%;
     }
-
-
-
-
     .hr_1
     {
         width: 2px; /* тонкая вертикальная линия */
@@ -444,7 +576,26 @@
 
      }
 
+.button_2
+{
+    width:405px;
+    height: 48px;
+    border-radius: 10px;
+    background-color:#062A80;
+    margin-left: 37%;
+    margin-top: 1.5%;
+}
 
+.txt_button_2
+{
+    font-family: 'Montserrat', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    font-style:Bold;
+    line-height:140%;
+    letter-spacing: 0%;
+    color:#CAE9FB;
+}
 
 }
 
