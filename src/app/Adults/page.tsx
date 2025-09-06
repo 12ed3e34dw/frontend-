@@ -81,7 +81,7 @@ export default function Page() {
                     <div className="hr_4"></div>
                 </div>
             </div>
-            <div className="content_2">
+            <div className="container_2">
                 <div className="txt_29">{t("SIGN UP")}</div>
                 <div className="txt_30">{t("FOR A")}</div>
                 <div className="txt_31">{t("FREE SESSION")}</div>
@@ -119,7 +119,7 @@ export default function Page() {
                 {t("15 SEPTEMBER")}
             </div>
         </div>
-        <div className="content_5">
+        <div className="container_5">
 <div className="txt_43">
     {t("TOURIST ASSISTANT")}
 </div>
@@ -163,16 +163,107 @@ export default function Page() {
                 {t("15 SEPTEMBER")}
             </div>
         </div>
+        <div className="container_7">
+            <div className="txt_57">{t("TOURIST ASSISTANT")}</div>
+            <div className="txt_58">{t("Extra course for new tourists, which give basic")}</div>
+            <div className="txt_59">{t("phrases for unexpected situations")}</div>
+            <div className="txt_60">{t("-give preparation for the culture specifieces")}</div>
+            <div className="txt_61">{t("-make more confident")}</div>
+            <div className="txt_62">{t("-for B1-B2")}</div>
+            <div className="txt_63">{t("15 SEPTEMBER")}</div>
+        </div>
 
+        <div className="container_8">
+            <div className="txt_64">{t("TOURIST ASSISTANT")}</div>
+            <div className="txt_65">{t("Extra course for new tourists, which give basic phrases for")}</div>
+            <div className="txt_66">{t("unexpected situations")}</div>
+            <div className="txt_67">{t("-give preparation for culture specifieces")}</div>
+            <div className="txt_68">{t("-make more confident")}</div>
+            <div className="txt_69">{t("-for B1-B2")}</div>
+            <div className="txt_70">{t("15 SEPTEMBER")}</div>
+        </div>
+        <div className="container_9">
+            <div className="txt_71">{t("TOURIST ASSISTANT")}</div>
+            <div className="txt_72">{t("Extra course for new, which give basic phrases")}</div>
+            <div className="txt_73">{t("-give preparation for the culture specifieces")}</div>
+            <div className="txt_74">{t("-make more confident")}</div>
+            <div className="txt_75">{t("-for B1-B2")}</div>
+            <div className="txt_76">{t("15 SEPTEMBER")}</div>
+        </div>
+        <div className="container_10">
+            <div className="txt_77">{t("TOURIST ASSISTANT")}</div>
+            <div className="txt_78">{t("Extra course for new tourists, which give basic")}</div>
+            <div className="txt_79">{t("phrases for unexpected situations")}</div>
+            <div className="txt_80">{t("-give preparation for the culture specifieces")}</div>
+            <div className="txt_81">{t("-make more confident")}</div>
+            <div className="txt_82">{t("-for B1-B2")}</div>
+            <div className="txt_83">{t("15 SEPTEMBER")}</div>
+        </div>
 
+        <button className="button_3">
+            <div className="txt_button_3 ">
+                {t("More courses")}
+            </div>
+        </button>
 
+        {/* Четвертый экран */}
 
-
-        <div className="content_7">
-
+        <div className="container_11">
+            <div className="txt_84">{t("TEST")}</div>
+            <div className="txt_85">{t("YOUR")}</div>
+            <div className="txt_85_1">{t("KNOWLEDGE")}</div>
+            <div className="txt_86">{t("Take a quick online English level language test - and recieve list of the teachers!")} </div>
+            <button className="button_4">
+                <div className="txt_button_4 ">
+                    {t("Take the test")}
+                </div>
+            </button>
         </div>
     </div>
 
+            {/* Пятый экран */}
+
+            <div className="container_12">
+                <div className="txt_87">{t("OUR")}</div>
+                <div className="txt_88">{t("TEACHERS")}</div>
+                <div className="txt_89">{t("They came to us from all over the world to find you")}</div>
+            </div>
+
+
+
+            <div className="container_13">
+                <div className="txt_90">{t("FAQ")}</div>
+                <div className="txt_91">{t("Frequently asked questions")}</div>
+
+                <div className="container_lesson_1">
+                    <div className="txt_lesson_1">
+                        {t("HOW LONG IS THE LESSON?")}
+                    </div>
+                </div>
+                <div className="container_lesson_2">
+                    <div className="txt_lesson_2">
+                        {t("HOW LONG IS THE LESSON?")}
+                    </div>
+                </div>
+                <div className="container_lesson_3">
+                    <div className="txt_lesson_3">
+                        {t("HOW LONG IS THE LESSON?")}
+                    </div>
+                </div>
+                <div className="container_lesson_4">
+                    <div className="txt_lesson_4">
+                        {t("HOW LONG IS THE LESSON?")}
+                    </div>
+                </div>
+                <div className="container_lesson_5">
+                    <div className="txt_lesson_5">
+                        {t("HOW LONG IS THE LESSON?")}
+                    </div>
+                </div>
+
+
+
+            </div>
 
 
         </div>

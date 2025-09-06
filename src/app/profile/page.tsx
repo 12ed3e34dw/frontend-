@@ -2,6 +2,10 @@
 
 import { useSearchParams } from 'next/navigation';
 import { useTranslation } from "react-i18next";
+
+import Menu from "@/navigate/Menu";
+
+
 export default function Profile() {
     const params = useSearchParams();
     const email = params.get('email');
@@ -10,10 +14,15 @@ export default function Profile() {
 
     return (
         <main style={styles.main}>
-            <h1 style={styles.title}>{t("Profile")}</h1>
-            <div style={styles.box}>
+            <Menu/>
                 <p><strong>Email:</strong> {email}</p>
                 <p><strong>Password:</strong> {password}</p>
+
+            <div className="">
+
+                <div className="">SING UP FOR A FREE SESSION</div>
+
+
             </div>
         </main>
     );
@@ -26,20 +35,10 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'center',
         minHeight: '100vh',
-        background: '#f9f9f9',
+        background: '#121419',
         padding: 20,
         fontFamily: 'Arial, sans-serif'
     },
-    title: {
-        marginBottom: 20,
-        color: '#333'
-    },
-    box: {
-        background: '#fff',
-        padding: 20,
-        borderRadius: 12,
-        boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-        width: '100%',
-        maxWidth: 400
-    }
+
+
 };
